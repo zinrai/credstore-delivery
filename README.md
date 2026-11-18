@@ -24,6 +24,8 @@ GET /<name>   200  body is the value, byte for byte
 
 [zinrai/sakura-secrets-socket](https://github.com/zinrai/sakura-secrets-socket) serves this contract from SAKURA Cloud Secret Manager.
 
+[`example/store.py`](./example/store.py) serves it from a dict in the script, on `./store.sock`, to try credstore-delivery without a secret store.
+
 ## Requirements
 
 - Deploy server: `ssh` to every host, as the account given with `-user`, without a password prompt
